@@ -22,6 +22,3 @@ URL : https://github.com/edumonks/edumonks.com.git
 
 3) create new branch
 4) Push your branch
-
-Username : edumonks123@gmail.com
-PWD      : indiajapan1
