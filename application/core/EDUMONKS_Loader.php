@@ -14,7 +14,7 @@ class EDUMONKS_Loader extends CI_Loader {
 			return;
 		}
 
-		if($service = '') {
+		if($service == '') {
 			return;
 		}
 
@@ -24,7 +24,8 @@ class EDUMONKS_Loader extends CI_Loader {
 			$service = substr($service , $last_slash + 1);
 		}
 		
-		if($name = '') {
+		
+		if($name == '') {
 			$name = $service;
 		}
 		if(in_array($name, $this->_ci_service_paths, TRUE)) {
@@ -38,8 +39,8 @@ class EDUMONKS_Loader extends CI_Loader {
 			if(!file_exists($service_path.'services/'.$path.$service.EXT)) {
 				continue;
 			}
-			if(!class_exists('SNEWS_Service')) {
-				require(APPPATH . 'core/SNEWS_Service'.EXT);
+			if(!class_exists('EDUMONKS_Service')) {
+				require(APPPATH . 'core/EDUMONKS_Service'.EXT);
 			}
 			require_once ($service_path.'services/'.$path.$service.EXT);
 			$service = ucfirst($service);

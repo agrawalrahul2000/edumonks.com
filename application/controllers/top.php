@@ -2,9 +2,15 @@
 
 class Top extends EDUMONKS_Controller {
 	public function index() {
-		$this->setDatas();
+		$datas = $this->_getDatas();
+		$this->_setDatas($datas);
 	}
-	public function setDatas() {
+	private function _getDatas() {
+      $this->load->service('top_service');
+      $datas['scholarships'] = $this->top_service->getScholarshipsList();
+      $datas = $this->top_service->getDatas();
+	}
+	private function _setDatas($datas) {
 		$layout['header'] = array('html_header');
 		$layout['main'] = array(
 		'top/main',

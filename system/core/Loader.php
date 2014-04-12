@@ -238,7 +238,6 @@ class CI_Loader {
 			}
 			return;
 		}
-
 		if ($model == '')
 		{
 			return;
@@ -260,7 +259,7 @@ class CI_Loader {
 		{
 			$name = $model;
 		}
-
+		
 		if (in_array($name, $this->_ci_models, TRUE))
 		{
 			return;
@@ -280,7 +279,7 @@ class CI_Loader {
 			{
 				continue;
 			}
-
+			
 			if ($db_conn !== FALSE AND ! class_exists('CI_DB'))
 			{
 				if ($db_conn === TRUE)

@@ -5,7 +5,7 @@ class EDUMONKS_Exceptions extends CI_Exceptions {
 		parent::__construct();
 	}
 
-	private function __get($key) {
+	public function __get($key) {
 		$this->_CI = & get_instance();
 	}
 
