@@ -39,30 +39,47 @@
 |							- good for ensuring strict SQL while developing
 |
 | The $active_group variable lets you choose which connection group to
-| make active.  By default there is only one group (the 'default' group).
+| make active.  By default there is only one group (the 'master' group).
 |
 | The $active_record variables lets you determine whether or not to load
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'master';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['master']['hostname'] = 'localhost';
+$db['master']['username'] = 'root';
+$db['master']['password'] = '';
+$db['master']['database'] = 'edumonks';
+$db['master']['dbdriver'] = 'mysql';
+$db['master']['dbprefix'] = '';
+$db['master']['pconnect'] = TRUE;
+$db['master']['db_debug'] = TRUE;
+$db['master']['cache_on'] = FALSE;
+$db['master']['cachedir'] = '';
+$db['master']['char_set'] = 'utf8';
+$db['master']['dbcollat'] = 'utf8_general_ci';
+$db['master']['swap_pre'] = '';
+$db['master']['autoinit'] = TRUE;
+$db['master']['stricton'] = FALSE;
+
+
+$db['slave']['hostname'] = 'localhost';
+$db['slave']['username'] = 'root';
+$db['slave']['password'] = '';
+$db['slave']['database'] = 'edumonks';
+$db['slave']['dbdriver'] = 'mysql';
+$db['slave']['dbprefix'] = '';
+$db['slave']['pconnect'] = TRUE;
+$db['slave']['db_debug'] = TRUE;
+$db['slave']['cache_on'] = FALSE;
+$db['slave']['cachedir'] = '';
+$db['slave']['char_set'] = 'utf8';
+$db['slave']['dbcollat'] = 'utf8_general_ci';
+$db['slave']['swap_pre'] = '';
+$db['slave']['autoinit'] = TRUE;
+$db['slave']['stricton'] = FALSE;
 
 
 /* End of file database.php */

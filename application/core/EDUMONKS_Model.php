@@ -7,19 +7,18 @@ class EDUMONKS_Model extends CI_Model {
 	}
 
 	private function _getDbConn() {
-        $CI = & get_instance();
+		$CI = & get_instance();
 		if(isset($CI->db_master) && isset($CI->db_slave)) {
 			return;
 		} else {
-			print_r($CI->db_master);exit;
 			$CI->db_master = $this->load->database('master',TRUE);
 			$CI->db_slave = $this->load->database('slave',TRUE);
 			if($CI->db_slave->conn_id = FALSE) {
-				$CI->db_slave = $CI->load->database('master',TRUE);
+				$CI->db_slave = $this->load->database('master',TRUE);
 			}
 		}
-
 	}
+
 }
 
 

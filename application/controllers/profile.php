@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Top extends EDUMONKS_Controller {
+class Profile extends EDUMONKS_Controller {
 	private $_info = array();
 
 	public function index() {
@@ -15,10 +15,10 @@ class Top extends EDUMONKS_Controller {
 	}
 	private function _setDatas($datas) {
 		$info = array(
-	  "page_name" => "Edumonks Top",
-	  "page_type" => "Top",
+	  "page_name" => "Edumonks Profile",
+	  "page_type" => "Profile",
 	  "is_login" => false,
-	  "title" => "Edumonks Top"
+	  "title" => "Edumonks Profile"
 	  );
 	  $this->layout->setPageInfo($info);
 	  foreach($datas as $key => $value) {

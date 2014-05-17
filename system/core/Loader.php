@@ -242,7 +242,6 @@ class CI_Loader {
 		{
 			return;
 		}
-
 		$path = '';
 
 		// Is the model in a sub-folder? If so, parse out the filename and path.
@@ -254,7 +253,7 @@ class CI_Loader {
 			// And the model name behind it
 			$model = substr($model, $last_slash + 1);
 		}
-
+		
 		if ($name == '')
 		{
 			$name = $model;
@@ -272,14 +271,14 @@ class CI_Loader {
 		}
 
 		$model = strtolower($model);
-
+		
 		foreach ($this->_ci_model_paths as $mod_path)
 		{
+			
 			if ( ! file_exists($mod_path.'models/'.$path.$model.'.php'))
 			{
 				continue;
-			}
-			
+			}			
 			if ($db_conn !== FALSE AND ! class_exists('CI_DB'))
 			{
 				if ($db_conn === TRUE)
@@ -289,12 +288,11 @@ class CI_Loader {
 
 				$CI->load->database($db_conn, FALSE, TRUE);
 			}
-
+			
 			if ( ! class_exists('CI_Model'))
 			{
 				load_class('Model', 'core');
 			}
-
 			require_once($mod_path.'models/'.$path.$model.'.php');
 
 			$model = ucfirst($model);

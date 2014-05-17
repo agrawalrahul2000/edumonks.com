@@ -13,11 +13,8 @@ class EDUMONKS_Service {
 	 * it will be required for all pages and hence written in default service.
 	 */
 	public function getScholarshipsList() {
-		$this->CI->load->model('scholarships_model');
-		print_r('her');exit;
-		
+		$this->CI->load->model('scholarships_model');		
 		$scholarships = $this->CI->scholarships_model->getScholarships();
-		
 		if(! is_array($scholarships)) {
 			return array();
 		}

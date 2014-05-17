@@ -39,7 +39,6 @@ function &DB($params = '', $active_record_override = NULL)
 		}
 
 		include($file_path);
-
 		if ( ! isset($db) OR count($db) == 0)
 		{
 			show_error('No database connection settings were found in the database config file.');
@@ -117,7 +116,6 @@ function &DB($params = '', $active_record_override = NULL)
 	{
 		$active_record = $active_record_override;
 	}
-
 	require_once(BASEPATH.'database/DB_driver.php');
 
 	if ( ! isset($active_record) OR $active_record == TRUE)
@@ -136,13 +134,11 @@ function &DB($params = '', $active_record_override = NULL)
 			eval('class CI_DB extends CI_DB_driver { }');
 		}
 	}
-
 	require_once(BASEPATH.'database/drivers/'.$params['dbdriver'].'/'.$params['dbdriver'].'_driver.php');
 
 	// Instantiate the DB adapter
 	$driver = 'CI_DB_'.$params['dbdriver'].'_driver';
 	$DB = new $driver($params);
-
 	if ($DB->autoinit == TRUE)
 	{
 		$DB->initialize();
@@ -151,8 +147,7 @@ function &DB($params = '', $active_record_override = NULL)
 	if (isset($params['stricton']) && $params['stricton'] == TRUE)
 	{
 		$DB->query('SET SESSION sql_mode="STRICT_ALL_TABLES"');
-	}
-
+	}	
 	return $DB;
 }
 
