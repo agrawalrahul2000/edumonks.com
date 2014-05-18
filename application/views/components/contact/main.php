@@ -1,7 +1,7 @@
 <div id="content" class="left">
 	<!-- start breadcrumbs -->
 	<div id="breadcrumbs">
-		<a href="http://edumonks.com"> Home </a> &raquo;&raquo;&nbsp; ContactEdumonks
+		<a href="<?php echo $this->config->item('base_url');?>"> Home </a> &raquo;&raquo;&nbsp; ContactEdumonks
 	</div>
 	<div id="post-32" class="post-32 page type-page status-publish hentry">
 		<h1 class="page-title">Contact</h1>
@@ -20,7 +20,7 @@
 					style="display: none;">Cancel reply</a>
 				</small>
 			</h3>
-			<form action="http://edumonks.com/wp-comments-post.php" method="post"
+			<form action="<?php echo $this->config->item('base_url');?>/wp-comments-post.php" method="post"
 				id="commentform" class="comment-form">
 				<p class="comment-notes">
 					Your email address will not be published. Required fields are

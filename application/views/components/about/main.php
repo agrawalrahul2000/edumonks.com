@@ -1,7 +1,7 @@
 <div id="content" class="left">
 	<!-- start breadcrumbs -->
 	<div id="breadcrumbs">
-		<a href="http://edumonks.com"> Home </a> &raquo;&raquo;&nbsp; About UsEdumonks
+		<a href="<?php echo $this->config->item('base_url');?>"> Home </a> &raquo;&raquo;&nbsp; About UsEdumonks
 	</div>
 	<div id="post-30" class="post-30 page type-page status-publish hentry">
 		<h1 class="page-title">About Us</h1>

@@ -48,6 +48,7 @@ $route['scholarships'] = 'scholarships/index';
 $route['scholarships/my'] = 'scholarships/my';
 $route['scholarships/all'] = 'scholarships/all';
 $route['scholarships/add'] = 'scholarships/add';
+$route['scholarships/post'] = 'scholarships/post';
 $route['scholarships/edit/(:any)'] = 'scholarships/edit/$1';
 $route['scholarships/delete/(:any)'] = 'scholarships/delete/$1';
 $route['scholarships/detail/(:any)'] = 'scholarships/detail/$1';

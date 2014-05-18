@@ -9,8 +9,8 @@ class Profile extends EDUMONKS_Controller {
 		$this->_view();
 	}
 	private function _getDatas() {
-		$this->load->service('top_service');
-		$datas['tabMenu']['scholarships'] = $this->top_service->getScholarshipsList();
+		$this->load->service('scholarships_service');
+		$datas['tabMenu']['scholarships'] = $this->scholarships_service->getScholarshipsList();
 		return $datas;
 	}
 	private function _setDatas($datas) {

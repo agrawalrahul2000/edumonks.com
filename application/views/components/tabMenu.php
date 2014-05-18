@@ -7,8 +7,7 @@
 		<div class="nav-menu">
 			<ul>
 				<li class="page_item page-item-28 current_page_item"><a
-					href="<?php echo $this->config->item('base_url');?>">Home</a>
-				</li>
+					href="<?php echo $this->config->item('base_url');?>">Home</a></li>
 				<li class="page_item page-item-38 page_item_has_children"><a
 					href="<?php echo $this->config->item('base_url');?>scholarships/">Scholarships</a>
 					<ul class='children'>
@@ -17,8 +16,7 @@
 						</li>
 						<li class="page_item page-item-16"><a
 							href="<?php echo $this->config->item('base_url');?>scholarships/my-scholarships/">My
-								Scholarships</a>
-						</li>
+								Scholarships</a></li>
 						<li class="page_item page-item-46 page_item_has_children"><a
 							href="<?php echo $this->config->item('base_url');?>scholarships/all-scholarships/">All
 								Scholarships</a> <?php if(isset($scholarships) && count($scholarships)) { ?>
@@ -26,19 +24,18 @@
 							<?php foreach($scholarships as $key => $value) { ?>
 								<li class="page_item page-item-147"><a
 									href="<?php echo $this->config->item('base_url');?>scholarships/all-scholarships/<?php echo escapeHtml($value['title']);?>/"><?php echo $value['title'];?>
-								</a>
-								</li>
+								</a></li>
 								<?php }?>
-							</ul> <?php } ?></li>
-					</ul></li>
+							</ul> <?php } ?>
+						</li>
+					</ul>
+				</li>
 				<li class="page_item page-item-36"><a
 					href="<?php echo $this->config->item('base_url');?>profile/">My
-						Profile</a>
-				</li>
+						Profile</a></li>
 				<li class="page_item page-item-30"><a
 					href="<?php echo $this->config->item('base_url');?>aboutus/">About
-						Us</a>
-				</li>
+						Us</a></li>
 				<li class="page_item page-item-32"><a
 					href="<?php echo $this->config->item('base_url');?>contact/">Contact</a>
 				</li>
