@@ -64,7 +64,7 @@ $autoload['libraries'] = array('layout');
  |	$autoload['helper'] = array('url', 'file');
  */
 
-$autoload['helper'] = array('EDUMONKS_security_helper');
+$autoload['helper'] = array('util_helper');
 
 
 /*

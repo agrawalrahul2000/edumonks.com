@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine on
+ RewriteBase /
+
+ RewriteCond %{REQUEST_URI} ^/(css|js)
+ RewriteRule ^(.*)$ /web/$1 [L]
+
+ RewriteCond %{REQUEST_URI} !^(index\.php|.+\.css$|.+\.js$)
+ RewriteRule %(.*)$ /index.php/$1 [L]
+</IfModule>

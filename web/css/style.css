@@ -1,144 +1,154 @@
-@import url("../premium-style/style.css");
+@import url("/css/premiumStyle.css");
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
 /**************** Premium Style entry meta CSS ****************/
-.page-title { 
-font-family:'Open Sans Light',sans-serif;
-font-weight:200;
-font-size:2.4em;
+.page-title {
+	font-family: 'Open Sans Light', sans-serif;
+	font-weight: 200;
+	font-size: 2.4em;
 }
 /******************************************************************/
 /**************** Premium Style Site Layout & Look ****************/
-#content { 	
-	width: 98%; 
-	text-align:justify;
+#content {
+	width: 98%;
+	text-align: justify;
 }
 
 table {
-    background-color:#E2DCDC;
+	background-color: #E2DCDC;
 }
 
-#content td, #comments td {
+#content td,#comments td {
 	border-top: 0px solid #EAEAEA;
 	padding: 2px 2px;
 }
 
 /******************************************************************/
 /**************** Premium Style Default Theme CSS ****************/
-body{
-	font-family:Segoe UI,Arial,sans-serif;
-	font-size:1.1em;
-	}
-h1 { 
-	font-size: 5em; 
+body {
+	font-family: Segoe UI, Arial, sans-serif;
+	font-size: 1.1em;
 }
-h2 { 
-	font-size: 4em; 
+
+h1 {
+	font-size: 5em;
 }
-h3 { 
-	font-size: 3em; 
+
+h2 {
+	font-size: 4em;
 }
-h4 { 
-	font-size: 2em; 
+
+h3 {
+	font-size: 3em;
 }
-h5 { 
-	font-size: 1.6em; 
+
+h4 {
+	font-size: 2em;
 }
-h6{
-	font-size:1.1em;
-	}
-h1,h2,h3,h4,h5,h6 { 
-	font-family: font-family:Segoe UI,Arial,sans-serif; 
-	}
-code,kbd,samp,tt { 
-	font: 13px/1.385 Segoe UI,Arial,sans-serif;  
+
+h5 {
+	font-size: 1.6em;
 }
-body,input,button,select,textarea,option { 
-	font-family: Segoe UI,Arial,sans-serif; 
+
+h6 {
+	font-size: 1.1em;
 }
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: font-family : Segoe UI, Arial, sans-serif;
+}
+
+code,kbd,samp,tt {
+	font: 13px/1.385 Segoe UI, Arial, sans-serif;
+}
+
+body,input,button,select,textarea,option {
+	font-family: Segoe UI, Arial, sans-serif;
+}
+
 #content .entry-title {
 	font-size: 1.6em;
 }
+
 .site-header h1 {
 	font-size: 3em;
 	font-weight: normal;
 }
+
 .site-header h2 {
 	color: #999999;
 	font-size: 0.8em;
 	line-height: 1.5;
 }
-.entry-title a { 
-	font-family: Segoe UI,Arial,sans-serif; 
-	font-weight: bold; 
 
+.entry-title a {
+	font-family: Segoe UI, Arial, sans-serif;
+	font-weight: bold;
 }
-#primary-nav { 
-	font-size: 10px; 
-	font-family:Segoe UI,Arial,sans-serif;
-	}
+
+#primary-nav {
+	font-size: 10px;
+	font-family: Segoe UI, Arial, sans-serif;
+}
 /******************************************************************/
 
-
-
-
 /**************** Classes defined by me ****************/
-.banner-home01{
-width: 1000px;
-float:left;
-height:250px;
-border:1px solid #CCC;
-padding:10px 5px 15px 20px;
-margin-bottom:20px;
-margin-right:20px;
-margin-left:20px;
-
-}
-.wrap-home01{
-width: 1050px;
-float: left;
-height:auto;
-border:1px solid #000000;
-margin-bottom:20px;
-margin-right:20px;
-margin-left:20px;
+.banner-home01 {
+	width: 1000px;
+	float: left;
+	height: 250px;
+	border: 1px solid #CCC;
+	padding: 10px 5px 15px 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
-.title-home01{
-height:40px;
-border-bottom-width:1px;
-border-bottom-style:dotted;
-border-bottom-color:#666;
-background-color:#7fa5b0;
-text-indent:10px;
+.wrap-home01 {
+	width: 1050px;
+	float: left;
+	height: auto;
+	border: 1px solid #000000;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
-.content-home01{
-width: 1000px;
-float: left;
-margin-bottom:20px;
-margin-right:20px;
-margin-left:20px;
-padding:10px 5px 15px 20px;
+.title-home01 {
+	height: 40px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #666;
+	background-color: #7fa5b0;
+	text-indent: 10px;
 }
 
-.content-sch01{
-width: 300px;
-float: left;
-height:100px;
-border:1px solid #CCC;
-padding:10px 5px 15px 20px;
-margin-bottom:20px;
-margin-right:20px;
-margin-left:20px;
-text-align:center;
+.content-home01 {
+	width: 1000px;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 10px 5px 15px 20px;
 }
 
-.sub-title-home{
-font-size:0.8em;
-font-family: Segoe UI,Arial,sans-serif; 
-text-indent:10px;
+.content-sch01 {
+	width: 300px;
+	float: left;
+	height: 100px;
+	border: 1px solid #CCC;
+	padding: 10px 5px 15px 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.sub-title-home {
+	font-size: 0.8em;
+	font-family: Segoe UI, Arial, sans-serif;
+	text-indent: 10px;
 }
 /******************************************************************/

@@ -20,13 +20,13 @@
 	title="Edumonks &raquo; Comments Feed"
 	href="http://edumonks.com/comments/feed/" />
 <link rel='stylesheet' id='premiumstyle-style-css'
-	href='http://edumonks.com/wp-content/themes/premium-style-child/style.css?ver=3.8.1'
+	href='<?php echo $this->config->item('base_url');?>/css/style.css'
 	type='text/css' media='all' />
 <!--[if lt IE 9]>
-<link rel='stylesheet' id='premiumstyle-ie-css'  href='http://edumonks.com/wp-content/themes/premium-style/ie.css?ver=20131110' type='text/css' media='all' />
+<link rel='stylesheet' id='premiumstyle-ie-css'  href='<?php echo $this->config->item('base_url');?>/css/ie.css' type='text/css' media='all' />
 <![endif]-->
 <script type='text/javascript'
-	src='http://edumonks.com/wp-content/themes/premium-style/js/html5.js?ver=20131110'></script>
+	src='<?php echo $this->config->item('base_url');?>/js/html5.js'></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD"
 	href="http://edumonks.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml"
