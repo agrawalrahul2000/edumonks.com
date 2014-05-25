@@ -34,7 +34,7 @@
 					href="<?php echo $this->config->item('base_url');?>profile/">My
 						Profile</a></li>
 				<li class="page_item page-item-30"><a
-					href="<?php echo $this->config->item('base_url');?>aboutus/">About
+					href="<?php echo $this->config->item('base_url');?>about/">About
 						Us</a></li>
 				<li class="page_item page-item-32"><a
 					href="<?php echo $this->config->item('base_url');?>contact/">Contact</a>

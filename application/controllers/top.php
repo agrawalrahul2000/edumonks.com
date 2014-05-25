@@ -29,9 +29,11 @@ class Top extends EDUMONKS_Controller {
 
 		$layout['header'] = array('html_header');
 		$layout['main'] = array(
-		strtolower(__CLASS__).'/main',
-		strtolower(__CLASS__).'/side',
-		strtolower(__CLASS__).'/footer');
+		strtolower(__CLASS__).'/main'
+		);
+		$layout['rnavi'] = array(
+		strtolower(__CLASS__).'/side'
+		);
 		$layout['tabMenu'] = array('tabMenu');
 		$layout['footer'] = array('html_footer');
 

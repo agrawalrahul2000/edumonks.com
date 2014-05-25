@@ -20,8 +20,7 @@
 	title="Edumonks &raquo; Comments Feed"
 	href="http://edumonks.com/comments/feed/" />
 <link rel='stylesheet' id='premiumstyle-style-css'
-	href='<?php echo $this->config->item('base_url');?>/css/style.css'
-	type='text/css' media='all' />
+	href='http://edumonks.com/css/style.css' type='text/css' media='all' />
 <!--[if lt IE 9]>
 <link rel='stylesheet' id='premiumstyle-ie-css'  href='<?php echo $this->config->item('base_url');?>/css/ie.css' type='text/css' media='all' />
 <![endif]-->
@@ -70,12 +69,23 @@ body.custom-background {
 			print_r($_main);
 		}
 	} ?>
+		<div id="sidebar" class="right">
+			<div class="clear">
+			<?php if(isset($rnavi) && is_array($rnavi)) {
+				foreach($rnavi as $key => $_rnavi) {
+					print_r($_rnavi);
+				}
+			} ?>
+			</div>
+		</div>
+
+		<?php if(isset($footer) && is_array($footer)) {
+			foreach($footer as $key => $_footer) {
+				print_r($_footer);
+			}
+		} ?>
 	</div>
-	<?php if(isset($footer) && is_array($footer)) {
-		foreach($footer as $key => $_footer) {
-			print_r($_footer);
-		}
-	} ?>
+
 </body>
 </html>
 <!-- Dynamic page generated in 0.982 seconds. -->

@@ -5,6 +5,10 @@
  RewriteCond %{REQUEST_URI} ^/(css|js)
  RewriteRule ^(.*)$ /web/$1 [L]
 
- RewriteCond %{REQUEST_URI} !^(index\.php|.+\.css$|.+\.js$)
- RewriteRule %(.*)$ /index.php/$1 [L]
+# RewriteCond %{REQUEST_URI} !^(index\.php|.+\.css$|.+\.js$)
+# RewriteRule %(.*)$ /index.php/$1 [L]
+
+RewriteCond $1 !^(index\.php|images|robots\.txt|.+\.css$|.+\.js$)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
 </IfModule>
