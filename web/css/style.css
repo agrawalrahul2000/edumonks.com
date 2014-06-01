@@ -12,7 +12,20 @@
 /******************************************************************/
 /**************** Premium Style Site Layout & Look ****************/
 #content {
-	width: 98%;
+	width: 60%;
+	text-align: justify;
+}
+
+.main {
+	height: auto;
+	width: 70%;
+	text-align: justify;
+	width: 70%;
+}
+
+.sidebar {
+	height: auto;
+	width: 30%;
 	text-align: justify;
 }
 
@@ -57,7 +70,7 @@ h6 {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: font-family : Segoe UI, Arial, sans-serif;
+	font-family: font-family :     Segoe UI, Arial, sans-serif;
 }
 
 code,kbd,samp,tt {

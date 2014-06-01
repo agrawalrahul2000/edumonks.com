@@ -46,10 +46,8 @@ class Scholarships extends EDUMONKS_Controller {
 	  	$this->_info[$key] = $value;
 	  }
 	}
+
 	private function _view () {
-
-		$layout['header'] = array('html_header');
-
 		switch($this->_type) {
 			case 'add' :
 				$main = strtolower(__CLASS__).'/add';
@@ -57,10 +55,11 @@ class Scholarships extends EDUMONKS_Controller {
 			default :
 				$main = strtolower(__CLASS__).'/main';
 		}
-		$layout['main'] = array(
-		$main,
-		strtolower(__CLASS__).'/side',
-		strtolower(__CLASS__).'/footer');
+		$layout['header'] = array('html_header');
+		$layout['main'] = array($main);
+		$layout['rnavi'] = array(
+		strtolower(__CLASS__).'/side'
+		);
 		$layout['tabMenu'] = array('tabMenu');
 		$layout['footer'] = array('html_footer');
 

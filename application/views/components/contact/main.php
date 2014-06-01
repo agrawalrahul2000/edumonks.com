@@ -1,4 +1,3 @@
-<div id="content" class="left">
 	<!-- start breadcrumbs -->
 	<div id="breadcrumbs">
 		<a href="<?php echo $this->config->item('base_url');?>"> Home </a> &raquo;&raquo;&nbsp; ContactEdumonks
@@ -6,12 +5,7 @@
 	<div id="post-32" class="post-32 page type-page status-publish hentry">
 		<h1 class="page-title">Contact</h1>
 		<div class="entry entry-content"></div>
-		<div class="clear"></div>
 	</div>
-
-
-	<div id="comments"></div>
-
 	<div id="respond">
 		<div id="respond" class="comment-respond">
 			<h3 id="reply-title" class="comment-reply-title">
@@ -60,6 +54,4 @@
 			</form>
 		</div>
 		<!-- #respond -->
-		<div class="fix"></div>
 	</div>
-</div>

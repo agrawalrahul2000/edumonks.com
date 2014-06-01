@@ -64,26 +64,30 @@ body.custom-background {
 	} ?>
 	<!-- end website menu -->
 	<div class="wrap fullwidth">
-	<?php if(isset($main) && is_array($main)) {
-		foreach($main as $key => $_main) {
-			print_r($_main);
-		}
-	} ?>
-		<div id="sidebar" class="right">
-			<div class="clear">
-			<?php if(isset($rnavi) && is_array($rnavi)) {
-				foreach($rnavi as $key => $_rnavi) {
-					print_r($_rnavi);
+		<div id="content" class="left">
+			<div class="main">
+			<?php if(isset($main) && is_array($main)) {
+				foreach($main as $key => $_main) {
+					print_r($_main);
 				}
 			} ?>
 			</div>
-		</div>
+			<div id="sidebar" class="right">
+				<div class="clear">
+				<?php if(isset($rnavi) && is_array($rnavi)) {
+					foreach($rnavi as $key => $_rnavi) {
+						print_r($_rnavi);
+					}
+				} ?>
+				</div>
+			</div>
 
-		<?php if(isset($footer) && is_array($footer)) {
-			foreach($footer as $key => $_footer) {
-				print_r($_footer);
-			}
-		} ?>
+			<?php if(isset($footer) && is_array($footer)) {
+				foreach($footer as $key => $_footer) {
+					print_r($_footer);
+				}
+			} ?>
+		</div>
 	</div>
 
 </body>
