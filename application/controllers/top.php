@@ -3,13 +3,14 @@
 class Top extends EDUMONKS_Controller {
 	private $_info = array();
 
-	public function index() {
-		$datas = $this->_getDatas();
+	public function index() {		
+		$datas = $this->_getDatas();		
 		$this->_setDatas($datas);
-		$this->_view();
+		$this->_view();		
 	}
 	private function _getDatas() {
-		$this->load->service('scholarships_service');
+		
+		$this->load->service('scholarships_service');		
 		$datas['tabMenu']['scholarships'] = $this->scholarships_service->getScholarshipsList();
 		return $datas;
 	}
@@ -29,7 +30,9 @@ class Top extends EDUMONKS_Controller {
 
 		$layout['header'] = array('html_header');
 		$layout['main'] = array(
-		strtolower(__CLASS__).'/main'
+		strtolower(__CLASS__).'/main1',
+		strtolower(__CLASS__).'/main2',
+		strtolower(__CLASS__).'/main3'
 		);
 		$layout['rnavi'] = array(
 		strtolower(__CLASS__).'/side'

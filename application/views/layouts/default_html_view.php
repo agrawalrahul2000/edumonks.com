@@ -13,27 +13,14 @@
 <meta name="viewport" content="width=device-width">
 <title>Edumonks | Enabling Education</title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="http://edumonks.com/xmlrpc.php">
-<link rel="alternate" type="application/rss+xml"
-	title="Edumonks &raquo; Feed" href="http://edumonks.com/feed/" />
-<link rel="alternate" type="application/rss+xml"
-	title="Edumonks &raquo; Comments Feed"
-	href="http://edumonks.com/comments/feed/" />
 <link rel='stylesheet' id='premiumstyle-style-css'
-	href='http://edumonks.com/css/style.css' type='text/css' media='all' />
+	href='<?php echo $this->config->item('base_url')?>/web/css/style.css'
+	type='text/css' media='all' />
 <!--[if lt IE 9]>
 <link rel='stylesheet' id='premiumstyle-ie-css'  href='<?php echo $this->config->item('base_url');?>/css/ie.css' type='text/css' media='all' />
 <![endif]-->
 <script type='text/javascript'
 	src='<?php echo $this->config->item('base_url');?>/js/html5.js'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD"
-	href="http://edumonks.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml"
-	href="http://edumonks.com/wp-includes/wlwmanifest.xml" />
-
-<meta name="generator" content="WordPress 3.8.1" />
-<link rel='canonical' href='http://edumonks.com/' />
-<link rel='shortlink' href='http://edumonks.com/?p=28' />
 <style type="text/css" id="premiumstyle-header-css">
 .site-header h1 a,.site-header h2 {
 	color: #0a0a0a;
@@ -64,7 +51,7 @@ body.custom-background {
 	} ?>
 	<!-- end website menu -->
 	<div class="wrap fullwidth">
-		<div id="content" class="left">
+		<div id="content">
 			<div class="main">
 			<?php if(isset($main) && is_array($main)) {
 				foreach($main as $key => $_main) {
@@ -72,7 +59,7 @@ body.custom-background {
 				}
 			} ?>
 			</div>
-			<div id="sidebar" class="right">
+			<div class="sidebar">
 				<div class="clear">
 				<?php if(isset($rnavi) && is_array($rnavi)) {
 					foreach($rnavi as $key => $_rnavi) {
@@ -81,13 +68,13 @@ body.custom-background {
 				} ?>
 				</div>
 			</div>
-
-			<?php if(isset($footer) && is_array($footer)) {
-				foreach($footer as $key => $_footer) {
-					print_r($_footer);
-				}
-			} ?>
 		</div>
+
+		<?php if(isset($footer) && is_array($footer)) {
+			foreach($footer as $key => $_footer) {
+				print_r($_footer);
+			}
+		} ?>
 	</div>
 
 </body>
