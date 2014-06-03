@@ -202,8 +202,7 @@ embed,iframe,object,video {
 .fullwidth {
 	max-width: 1128px;
 	border: 1px solid #EAEAEA;
-	margin-bottom: 10px;
-	background: #7fa5b0;
+	margin-bottom: 10px; : #7 fa5b0;
 	margin-top: 15px;
 }
 
@@ -225,12 +224,59 @@ embed,iframe,object,video {
 #content .main {
 	width: 75%;
 	float: left;
+	overflow: hidden;
+}
+
+#content .main .main1 {
+	overflow: hidden;
+	background-color: #66CCFF;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+#content .main .main1 .left {
+	width: 49%;
+	float: left;
+	margin: 2px;
+	overflow: hidden;
+}
+
+#content .main .main1 .left .siteImage {
+	background-color: #0033CC;
+	position: absolute;
+}
+
+#content .main .main1 .right {
+	width: 49%;
+	float: left;
+	margin: 2px;
+	overflow: hidden;
+}
+
+#content .main .main1 .right .text {
+	margin: 5px;
+	padding: 5px;
+}
+
+#content .main .main1 .right .joinButton {
+	float: right;
+	padding: 10px;
+	background-color: #FF6600;
+	height: 20px;
+	width: 110px;
+	text-align: center;
+	color: white;
+}
+
+#content .main .main2 {
+	overflow: hidden;
 }
 
 #content .main .main2 .left {
-	width: 48%;
+	width: 49%;
 	float: left;
 	margin: 2px;
+	overflow: hidden;
 }
 
 #content .main .main2 .left fieldset {
@@ -241,12 +287,14 @@ embed,iframe,object,video {
 
 #content .main .main2 .left fieldset legend {
 	background-color: #33CCFF;
+	border-radius: 10px;
 	text-align: center;
 	font-size: 15px;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-left: 12px;
 	padding-right: 12px;
+	text-align: center;
 }
 
 #content .main .main2 .left fieldset ul {
@@ -258,9 +306,10 @@ embed,iframe,object,video {
 }
 
 #content .main .main2 .right {
-	width: 48%;
+	width: 49%;
 	float: left;
 	margin: 2px;
+	overflow: hidden;
 }
 
 #content .main .main2 .right fieldset {
@@ -271,6 +320,7 @@ embed,iframe,object,video {
 
 #content .main .main2 .right fieldset legend {
 	background-color: #66FF66;
+	border-radius: 10px;
 	text-align: center;
 	font-size: 15px;
 	padding-top: 2px;
@@ -285,6 +335,46 @@ embed,iframe,object,video {
 
 #content .main .main2 .right fieldset ul li {
 	font-size: 12px;
+}
+
+#content .main .main3 {
+	overflow: hidden;
+	background-color: #66CCFF;
+	margin: 5px;
+}
+
+#content .main .main3 .title {
+	padding: 10px;
+}
+
+#content .main .main3 .content {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: white;
+}
+
+#content .main .main3 ul {
+	width: 98%;
+	margin: 0;
+	padding: 0;
+}
+
+#content .main .main3 ul:after {
+	content: ".";
+	clear: both;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+#content .main .main3 ul li {
+	margin: 0 0 0 30px;
+	padding: 0 0 10px 0;
+	float: left;
+	display: block;
+	width: 350px;
 }
 
 #content .sidebar {
@@ -1194,29 +1284,45 @@ cite {
 }
 
 /**************** Premium Style copyright CSS ****************/
-#footer .copyright {
-	color: #333333;
+#footer {
+	color: White;
+	background-color: #505050;
 	width: 100%;
-	padding: 15px 0 15px 0;
+	padding: 10px;
+	width: 100%;
 }
 
-#footer .copyright a {
-	color: #999999;
-	text-decoration: none;
-	margin: 0 2px;
+#footer  .coconnect {
+	width: 23%;
+	padding-right: 5px;
+	display:inline-block;
 }
 
-#footer .copyright a:hover {
-	color: #333333;
-	text-decoration: none;
+#footer  .services {
+	width: 23%;
+	padding-right: 5px;
+	display:inline-block;
+}
+
+#footer  .legal {
+	width: 23%;
+	padding-right: 5px;
+	display:inline-block;
+}
+
+#footer  .edumonks {
+	width: 23%;
+	padding-right: 5px;
+	display:inline-block;
 }
 
 .credits {
 	font-size: 11px;
-	color: #333333;
+	color: White;
 	width: 100%;
 	text-align: center;
-	padding-bottom: 10px;
+	padding: 10px;
+	background-color: #282828;
 }
 
 /**************** Premium Style scroll and sticky CSS ****************/

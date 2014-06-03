@@ -1,4 +1,4 @@
-<div class="pa10 main2">
+<div class="main2">
 	<div class="left">
 		<fieldset>
 			<legend><b>Seekers:Students/Parents</b></legend>

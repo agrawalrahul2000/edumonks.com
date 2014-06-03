@@ -1,22 +1,26 @@
 <div id="footer">
-	<div class="copyright">
-		<span class="footerleft"> Copyright © 2014 </span> <span
-			class="footerright"> All rights reserved </span>
-		<div class="clear"></div>
+	<div class="connect">
+		<div class="title">Connect us with</div>
+		<ul>
+			<li>Join Us on Facebook</li>
+			<li>Follow Us on Twitter</li>
+			<li>Connect on LinkedIn</li>
+			<li>Submit a Scholarship</li>
+		</ul>
+	</div>
+	<div class="services">
+		<div class="title">Services</div>
+	</div>
+	<div class="legal">
+		<div class="title">Legal</div>
+	</div>
+	<div class="edumonks">
+		<div class="title">EDUMONKS.COM</div>
 	</div>
 </div>
 
 <div class="credits">
-	Proudly powered by <a href="http://wordpress.org/"
-		title="Semantic Personal Publishing Platform"> WordPress </a>
-	&nbsp;&nbsp;Premium Style Theme by <a href="http://www.gopiplus.com/"
-		title="Premium Style Theme"> www.gopiplus.com </a>
+	(C)
+	<?php print_r(date("Y"));?>
+	Edumonks.com, All Rights Reserved.
 </div>
-<!-- 
-<script
-	type='text/javascript'
-	src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201414'></script>
-<script
-	type='text/javascript'
-	src='<?php echo $this->config->item('base_url');?>/js/navigation.js'></script>
- -->
