@@ -225,17 +225,19 @@ embed,iframe,object,video {
 	width: 75%;
 	float: left;
 	overflow: hidden;
+	padding: 10px;
 }
 
 #content .main .main1 {
 	overflow: hidden;
 	background-color: #66CCFF;
 	margin-bottom: 10px;
+	margin-top: 5px;
 	padding: 5px;
 }
 
 #content .main .main1 .left {
-	width: 49%;
+	width: 48%;
 	float: left;
 	margin: 2px;
 	overflow: hidden;
@@ -247,8 +249,8 @@ embed,iframe,object,video {
 }
 
 #content .main .main1 .right {
-	width: 49%;
-	float: left;
+	width: 48%;
+	float: right;
 	margin: 2px;
 	overflow: hidden;
 }
@@ -270,12 +272,13 @@ embed,iframe,object,video {
 
 #content .main .main2 {
 	overflow: hidden;
+	padding: 5px;
 }
 
 #content .main .main2 .left {
 	width: 49%;
 	float: left;
-	margin: 2px;
+	margin: 4px;
 	overflow: hidden;
 }
 
@@ -308,7 +311,7 @@ embed,iframe,object,video {
 #content .main .main2 .right {
 	width: 49%;
 	float: left;
-	margin: 2px;
+	margin: 4px;
 	overflow: hidden;
 }
 
@@ -1292,30 +1295,64 @@ cite {
 	width: 100%;
 }
 
-#footer  .coconnect {
-	width: 23%;
+#footer  .connect {
+	width: 24%;
 	padding-right: 5px;
-	display:inline-block;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%
+}
+
+#footer ul {
+	margin-top: 10px;
+}
+
+#footer ul li {
+	text-align: left;
+}
+
+#footer ul li img {
+	vertical-align: middle;
+	height: 25px;
+	width: 25px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#footer .seperator {
+	width: 60%;
+	background-color: White;
+	height: 2px;
 }
 
 #footer  .services {
-	width: 23%;
+	width: 24%;
 	padding-right: 5px;
-	display:inline-block;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%
 }
 
 #footer  .legal {
-	width: 23%;
+	width: 24%;
 	padding-right: 5px;
-	display:inline-block;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%
 }
 
 #footer  .edumonks {
-	width: 23%;
+	width: 24%;
 	padding-right: 5px;
-	display:inline-block;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%
 }
 
+
+#footer  .edumonks .content{
+	font-size: 10px;
+}
 .credits {
 	font-size: 11px;
 	color: White;
