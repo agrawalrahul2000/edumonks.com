@@ -202,14 +202,50 @@ embed,iframe,object,video {
 .fullwidth {
 	max-width: 1128px;
 	border: 1px solid #EAEAEA;
-	margin-bottom: 10px; : #7 fa5b0;
-	margin-top: 15px;
+	margin-bottom: 10px;
+	:
+	#7
+	fa5b0;
 }
 
 .header {
 	max-width: 1130px;
+	max-height: 90px;
 	overflow: hidden;
-	border: 1px solid #FFFFFF
+	background-color: #0d5567;
+	overflow: hidden;
+}
+
+.hgroup .loginMenu {
+	padding: 10px;
+	width: 250px;
+	height: 76px;
+}
+
+.hgroup .loginMenu ul {
+	height: 38px;
+}
+
+.hgroup .loginMenu .topRow li {
+	float:right;
+	width: 30%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 15px;
+}
+
+.hgroup .loginMenu .bottomRow li {
+	float: right;
+	width: 48%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10px;
+}
+
+.hgroup .loginMenu li img {
+	height: 38px;
+	width: 38px;
+	vertical-align: middle;
 }
 
 #content {
@@ -221,18 +257,148 @@ embed,iframe,object,video {
 	overflow: hidden;
 }
 
+#content .sidebar .loginPanel {
+	background-color: #cccccc;
+	text-align: center;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+#content .sidebar .loginPanel ul.menu li {
+	float: left;
+	width: 50%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#content .sidebar .loginPanel ul.menu li.selected {
+	float: left;
+	width: 50%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: White;
+}
+
+#content .sidebar .loginPanel .content .loginSignup {
+	padding: 10px;
+}
+
+#content .sidebar .loginPanel .content .data {
+	padding: 10px;
+}
+
+#content .sidebar .loginPanel .content .data .input input {
+	width: 80%;
+	margin-bottom: 10px;
+}
+
+#content .sidebar .loginPanel .content .data .checkbox {
+	padding-right: 10%;
+	padding-left: 8%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#content .sidebar .loginPanel .content .loginButton {
+	padding: 10px;
+}
+
+#content .sidebar .loginPanel .content .loginButton button {
+	width: 100px;
+	padding: 10px;
+	background-color: blue;
+	margin: auto;
+}
+
+#content .sidebar .loginPanel ul.subMenu li {
+	float: left;
+	width: 50%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10px;
+}
+
+#content .sidebar .announcements {
+	background: url("/edumonks.com/web/img/announcements.jpg");
+	background-size: 100% 100%;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 250px;
+	height: 300px;
+}
+
+#content .sidebar .announcements .title {
+	margin-top: 50px;
+}
+
+#content .sidebar .announcements .content {
+	margin-top: 20px;
+}
+
+#content .sidebar .notRegisteredYet {
+	background-color: #cccccc;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#content .sidebar .notRegisteredYet ul {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#content .sidebar .invitationPanel {
+	background-color: #cccccc;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#content .sidebar .invitationPanel .inner {
+	background-color: white;
+	padding: 5px;
+	margin: 3px;
+	text-align: center;
+}
+
+#content .sidebar .invitationPanel .inner .title {
+	margin: 5px;
+}
+
+#content .sidebar .letUsKnow {
+	background-color: #cccccc;
+	padding: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#content .sidebar .letUsKnow button {
+	background-color: orange;
+	border-radius: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	color: white;
+}
+
 #content .main {
-	width: 75%;
+	width: 73%;
 	float: left;
 	overflow: hidden;
-	padding: 10px;
+	margin-right: 5px;
 }
 
 #content .main .main1 {
 	overflow: hidden;
 	background-color: #66CCFF;
-	margin-bottom: 10px;
-	margin-top: 5px;
 	padding: 5px;
 }
 
@@ -245,13 +411,13 @@ embed,iframe,object,video {
 
 #content .main .main1 .left .siteImage {
 	background-color: #0033CC;
-	position: absolute;
 }
 
 #content .main .main1 .right {
 	width: 48%;
 	float: right;
 	margin: 2px;
+	padding: 5px;
 	overflow: hidden;
 }
 
@@ -272,24 +438,24 @@ embed,iframe,object,video {
 
 #content .main .main2 {
 	overflow: hidden;
-	padding: 5px;
+	margin-top: 20px;
 }
 
 #content .main .main2 .left {
-	width: 49%;
+	width: 48%;
 	float: left;
-	margin: 4px;
+	margin-right: 4px;
 	overflow: hidden;
 }
 
 #content .main .main2 .left fieldset {
-	border: solid 2px #33CCFF;
+	border: solid 2px #4ab2d6;
 	padding: 4px;
 	font-size: 10px;
 }
 
 #content .main .main2 .left fieldset legend {
-	background-color: #33CCFF;
+	background-color: #4ab2d6;
 	border-radius: 10px;
 	text-align: center;
 	font-size: 15px;
@@ -308,21 +474,35 @@ embed,iframe,object,video {
 	font-size: 12px;
 }
 
-#content .main .main2 .right {
-	width: 49%;
+#content .main .main2 .left fieldset ul li img {
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+#content .main .main2 .left .footer {
+	width: 100%;
 	float: left;
-	margin: 4px;
+	background-color: #4ab2d6;
+	font-size: 11px;
+	padding: 5px;
+}
+
+#content .main .main2 .right {
+	width: 48%;
+	float: right;
+	margin-left: 4px;
 	overflow: hidden;
 }
 
 #content .main .main2 .right fieldset {
-	border: solid 2px #66FF66;
+	border: solid 2px #a3c586;
 	padding: 4px;
 	font-size: 10px;
 }
 
 #content .main .main2 .right fieldset legend {
-	background-color: #66FF66;
+	background-color: #a3c586;
 	border-radius: 10px;
 	text-align: center;
 	font-size: 15px;
@@ -340,10 +520,24 @@ embed,iframe,object,video {
 	font-size: 12px;
 }
 
+#content .main .main2 .right fieldset ul li img {
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+}
+
+#content .main .main2 .right .footer {
+	width: 100%;
+	float: left;
+	background-color: #a3c586;
+	font-size: 11px;
+	padding: 5px;
+}
+
 #content .main .main3 {
 	overflow: hidden;
-	background-color: #66CCFF;
-	margin: 5px;
+	background-color: #4ab2d6;
+	margin-top: 20px;
 }
 
 #content .main .main3 .title {
@@ -359,7 +553,7 @@ embed,iframe,object,video {
 }
 
 #content .main .main3 ul {
-	width: 98%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -457,7 +651,14 @@ table a {
 .hgroup {
 	display: inline-block;
 	float: none;
-	padding: 0 0 0 5px;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	color: White;
+}
+
+.hgroup a {
+	color: White;
 }
 
 .site-header h1 {
@@ -1258,38 +1459,10 @@ cite {
 	border: none;
 }
 
-/**************** Premium Style footer CSS ****************/
-#footer {
-	border-top: 1px solid #EAEAEA;
-	background: none repeat scroll 0 0 #FAFAFA;
-}
-
-#footer .widget {
-	border: 1px solid #EAEAEA;
-}
-
-#footer .widget_tj_twitter .widget-title {
-	background: none;
-}
-
-#fwidget-1,#fwidget-2,#fwidget-3 {
-	float: left;
-	width: 215px;
-	float: left;
-	display: inline;
-	margin: 30px 20px 10px 0;
-}
-
-#fwidget-4 {
-	float: right;
-	width: 264px;
-	margin: 30px 0 10px 0;
-}
-
 /**************** Premium Style copyright CSS ****************/
 #footer {
 	color: White;
-	background-color: #505050;
+	background-color: #1f2930;
 	width: 100%;
 	padding: 10px;
 	width: 100%;
@@ -1349,17 +1522,17 @@ cite {
 	height: 100%
 }
 
-
-#footer  .edumonks .content{
+#footer  .edumonks .content {
 	font-size: 10px;
 }
+
 .credits {
 	font-size: 11px;
 	color: White;
 	width: 100%;
 	text-align: center;
 	padding: 10px;
-	background-color: #282828;
+	background-color: #181f25;
 }
 
 /**************** Premium Style scroll and sticky CSS ****************/
@@ -1750,12 +1923,11 @@ a.button:active,a.button.active {
 
 /**************** Premium Style menu CSS ****************/
 #primary-nav {
-	background: url(images/alert-overlay.png) repeat-x;
 	height: 36px;
 	font-size: 10px;
 	color: #FFFFFF;
 	line-height: 34px;
-	background-color: #222222;
+	background-color: #97a7b7;
 	/*max-width:100%;*/
 	margin: 0 auto;
 	max-width: 1128px;
@@ -1820,9 +1992,8 @@ a.button:active,a.button.active {
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
-		background-color: #222222;
+		background-color: #97a7b7;
 		color: #FFFFFF;
-		background: url("images/alert-overlay.png") repeat-x scroll 0 0 #222222;
 	}
 	.main-navigation ul {
 		margin: 0;
