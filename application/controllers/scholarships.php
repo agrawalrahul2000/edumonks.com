@@ -9,6 +9,22 @@ class Scholarships extends EDUMONKS_Controller {
 		$this->_setDatas($datas);
 		$this->_view();
 	}
+
+	public function my() {
+		$this->_type = 'my';
+		$datas = $this->_getDatas();
+		$this->_setDatas($datas);
+		$this->_view();
+	}
+
+	public function all() {
+		$this->_type = 'all';
+		$datas = $this->_getDatas();
+		$this->_setDatas($datas);
+		$this->_view();
+	}
+
+
 	public function add() {
 		//check admin permissions ..
 		$this->_type = 'add';
@@ -37,10 +53,23 @@ class Scholarships extends EDUMONKS_Controller {
 	private function _setDatas($datas) {
 		$info = array(
 	  "page_name" => "Edumonks Scholarships",
-	  "page_type" => "Scholarships",
 	  "is_login" => false,
 	  "title" => "Edumonks Scholarships"
 	  );
+	  switch($this->_type) {
+	  	case 'my':
+	  		$info['page_type'] = "My Scholarships";
+	  		break;
+	  	case 'all':
+	  		$info['page_type'] = "All Scholarships";
+	  		break;
+	  	case 'add':
+	  		$info['page_type'] = "Add Scholarship";
+	  		break;
+	  	default :
+	  		$info['page_type'] = "Scholarship";
+	  		break;
+	  }
 	  $this->layout->setPageInfo($info);
 	  foreach($datas as $key => $value) {
 	  	$this->_info[$key] = $value;
@@ -49,17 +78,46 @@ class Scholarships extends EDUMONKS_Controller {
 
 	private function _view () {
 		switch($this->_type) {
+			case 'my' :
+				$main = array(
+				'breadcrums',
+				'pankuz',
+				strtolower(__CLASS__).'/my_description',
+				strtolower(__CLASS__).'/my_content'
+				);
+				break;
+			case 'all' :
+				$main = array(
+				'breadcrums',
+				'pankuz',
+				strtolower(__CLASS__).'/all_tabmenu',
+				strtolower(__CLASS__).'/all_content'
+				);
+				break;
 			case 'add' :
-				$main = strtolower(__CLASS__).'/add';
+				$main = array(strtolower(__CLASS__).'/add');
 				break;
 			default :
-				$main = strtolower(__CLASS__).'/main';
+				$main = array(
+				'breadcrums',
+				'pankuz',
+				strtolower(__CLASS__).'/index_content',
+				strtolower(__CLASS__).'/index_menu');
 		}
 		$layout['header'] = array('html_header');
-		$layout['main'] = array($main);
-		$layout['rnavi'] = array(
-		strtolower(__CLASS__).'/side'
-		);
+		$layout['main'] = $main;
+		if($this->_type == 'all' || $this->_type == 'my') {
+			$layout['rnavi'] = array();
+		} else {
+
+			$layout['rnavi'] = array(
+		'side/announcements',
+		'side/not_registered_notice',
+		'side/invitation_panel',
+		'side/let_us_know_panel',
+			);
+
+		}
 		$layout['tabMenu'] = array('tabMenu');
 		$layout['footer'] = array('html_footer');
 

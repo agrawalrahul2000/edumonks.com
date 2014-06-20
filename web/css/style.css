@@ -227,7 +227,7 @@ embed,iframe,object,video {
 }
 
 .hgroup .loginMenu .topRow li {
-	float:right;
+	float: right;
 	width: 30%;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -579,6 +579,105 @@ embed,iframe,object,video {
 	float: right;
 }
 
+#content .scholarshipTop p {
+	margin: 10px;
+	font-size: 12px;
+}
+
+#content .scholarshipTopMenu {
+	color: White;
+	background-color: #1f2930;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#content .scholarshipTopMenu .title {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#content .scholarshipTopMenu img {
+	height: 90px;
+	width: 90px;
+}
+
+#content .scholarshipTopMenu .search {
+	width: 32%;
+	padding-right: 5px;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	text-align: center;
+}
+
+#content .scholarshipTopMenu .my_scholarship {
+	width: 32%;
+	padding-right: 5px;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	text-align: center;
+}
+
+#content .scholarshipTopMenu .all_scholarship {
+	width: 32%;
+	padding-right: 5px;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	text-align: center;
+}
+
+#content .main .alltabMenu {
+	margin-top: 20px;
+}
+
+#content .main .alltabMenu ul {
+	width: 75%;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#content .main .alltabMenu li {
+	width: 18%;
+	margin-right: 15px;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	background-color: gray;
+}
+
+#content .main .allContent {
+	margin-top: 20px;
+}
+
+#content .main .allContent table {
+	width: 80%;
+	border: 3px solid #6A9BCC;
+	margin: 0 auto;
+}
+#content .main .allContent table th{
+	background-color: #6A9BCC;
+	border:1px solid #B6DAFF;
+	text-align: left;
+}
+
+#content .main .allContent table td{
+	border:1px solid #6A9BCC;
+	border-color: #B6DAFF;
+}
+
+#content .main .allContent table .even{
+	background-color: white;
+}
+
+#content .main .allContent table .odd{
+	background-color: #B6DAFF;
+}
+
+
 #content .entry-title {
 	margin-bottom: 15px;
 	font-size: 23px;
@@ -844,7 +943,6 @@ a.readmore:hover {
 	margin-bottom: 15px;
 	padding: 0 0 18px 0;
 	text-decoration: none;
-	text-transform: uppercase;
 	vertical-align: bottom;
 	width: 100%;
 	word-wrap: break-word;

@@ -41,6 +41,11 @@
 $route['default_controller'] = 'top';
 $route['404_override'] = 'error/error_404';
 $route['profile'] = 'profile';
+$route['welcome'] = 'welcome/login';
+$route['welcome/login'] = 'welcome/login';
+$route['welcome/logout'] = 'welcome/logout';
+
+
 $route['about'] = 'about';
 $route['contact'] = 'contact';
 $route['top'] = 'top';

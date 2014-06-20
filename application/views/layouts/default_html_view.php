@@ -52,22 +52,28 @@ body.custom-background {
 	<!-- end website menu -->
 	<div class="wrap fullwidth">
 		<div id="content">
-			<div class="main">
+			<div class="main"
+			<?php if(!isset($rnavi) || ! is_array($rnavi)) { ?>
+			 style="width: 98%"
+			<?php } ?>
+			>
 			<?php if(isset($main) && is_array($main)) {
 				foreach($main as $key => $_main) {
 					print_r($_main);
 				}
 			} ?>
 			</div>
+			<?php  if(isset($rnavi) && is_array($rnavi)) { ?>
 			<div class="sidebar">
 				<div class="clear">
-				<?php if(isset($rnavi) && is_array($rnavi)) {
-					foreach($rnavi as $key => $_rnavi) {
-						print_r($_rnavi);
-					}
-				} ?>
+				<?php
+				foreach($rnavi as $key => $_rnavi) {
+					print_r($_rnavi);
+				}
+				?>
 				</div>
 			</div>
+			<?php } ?>
 		</div>
 
 		<?php if(isset($footer) && is_array($footer)) {
