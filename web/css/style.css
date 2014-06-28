@@ -658,24 +658,168 @@ embed,iframe,object,video {
 	border: 3px solid #6A9BCC;
 	margin: 0 auto;
 }
-#content .main .allContent table th{
+
+#content .main .allContent table th {
 	background-color: #6A9BCC;
-	border:1px solid #B6DAFF;
+	border: 1px solid #B6DAFF;
 	text-align: left;
 }
 
-#content .main .allContent table td{
-	border:1px solid #6A9BCC;
+#content .main .allContent table td {
+	border: 1px solid #6A9BCC;
 	border-color: #B6DAFF;
 }
 
-#content .main .allContent table .even{
+#content .main .allContent table .even {
 	background-color: white;
 }
 
-#content .main .allContent table .odd{
+#content .main .allContent table .odd {
 	background-color: #B6DAFF;
 }
+
+#content .main .myScholarships {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+
+#content .main .myScholarships .description {
+	width: 60%;
+	height: 100%;
+	float: left;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+#content .main .myScholarships .summary {
+	width: 30%;
+	height: 100%;
+	float: right;
+	font-size: 12px;
+	border: 2px solid blue;
+	padding: 10px;
+}
+
+#content .main .myScholarships .summary .seperator {
+	background-color: blue;
+	height: 2px;
+}
+
+#content .main .myScholarships .summary .matches {
+	background-color: #B6DAFF;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#content .main .myScholarships .summary .matches .count {
+	width: 20%;
+	float: left;
+	font-size: 30px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+#content .main .myScholarships .summary .matches .worth {
+	width: 65%;
+	float: right;
+	font-size: 15px;
+	padding: 3px;
+}
+
+#content .main .myScholarships .summary .counts {
+	background-color: White;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#content .main .myScholarships .summary .counts .applied {
+	width: 48%;
+	float: left;
+	font-size: 15px;
+	text-align: center;
+	background-color: #99CCFF;
+}
+
+#content .main .myScholarships .summary .counts .applied span {
+	font-size: 30px;
+	text-align: center;
+}
+
+#content .main .myScholarships .summary .counts .apply {
+	width: 48%;
+	float: right;
+	font-size: 15px;
+	text-align: center;
+	background-color: #BFC9D1;
+}
+
+#content .main .myScholarships .summary .counts .apply span {
+	font-size: 30px;
+	text-align: center;
+}
+
+#content .main .myScholarshipsContent {
+	margin-top : 20px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+	
+}
+
+#content .main .myScholarshipsContent .tabMenu {
+	width:100%;
+	display: table;
+}
+
+#content .main .myScholarshipsContent .tabMenu  li {
+	width: 10%;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	background-color: #E6E6E6;
+	text-align: center;
+	margin-right: 2px;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#content .main .myScholarshipsContent .tabMenu  li:hover {
+	background-color: #6A9BCC;
+}
+
+#content .main .myScholarshipsContent .tabMenu  li.select{
+	background-color: #6A9BCC;
+}
+
+#content .main .myScholarshipsContent table {
+	width: 90%;
+}
+
+#content .main .myScholarshipsContent table th {
+	background-color: #6A9BCC;
+	text-align: left;
+}
+
+#content .main .myScholarshipsContent table .even {
+	background-color: white;
+}
+
+#content .main .myScholarshipsContent table .odd {
+	background-color: #B6DAFF;
+}
+
+#content .main .myScholarshipsContent table select {
+	border: 1px solid black;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
 
 
 #content .entry-title {

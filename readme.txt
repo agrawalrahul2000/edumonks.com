@@ -17,8 +17,17 @@ GIT clone :
 1) Goto www directory of wamp server :
 it should be C:\wamp\www\
 
-2) git clone 
-URL : https://github.com/edumonks/edumonks.com.git
+2) git clone
+
+using WAMP server 
+	goto www folder , right click, select git clone
+	Paste the URL : https://github.com/edumonks/edumonks.com.git
+	Proceed.
+
+using XAMP server goto htdocs server.
+	goto htdocs folder , right click, select git clone
+	Paste the URL : https://github.com/edumonks/edumonks.com.git
+	Proceed.
 
 3) create new branch
 4) Push your branch
